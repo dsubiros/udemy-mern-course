@@ -1,10 +1,20 @@
 // import {createBrowserRouter} from "react-router-dom";
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import {
+  HomeLayout,
+  Landing,
+  Register,
+  Login,
+  DashboardLayout,
+  Error,
+} from './pages';
 
 const router = createBrowserRouter([
-  { path: '/', element: <h1>home</h1> },
-  { path: '/about', element: <h1>about page</h1> },
+  { path: '/', element: <HomeLayout /> },
+  { path: '/register', element: <Register /> },
+  { path: '/login', element: <Login /> },
+  { path: '/dashboard', element: <DashboardLayout /> },
 ]);
 
 const App = () => {
